@@ -14,6 +14,10 @@ avatar: https://raw.githubusercontent.com/unaheidi/unaheidi.github.io/master/ima
 # Flags below are optional
 #
 
+# Leancloud
+leancloud:
+  enable: true
+
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
@@ -72,9 +76,10 @@ sass:
   style: :expanded # You might prefer to minify using :compressed
 
 # Use the following plug-ins
-gems:
+plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jekyll-environment-variables
 
 # Exclude these files from your production _site
 exclude:

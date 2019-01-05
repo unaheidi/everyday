@@ -13,5 +13,15 @@ layout: default
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
 
+  {% if site.leancloud.enable %}
+    <span id="{{ page.url }}" class="leancloud_visitors" data-flag-title="{{ page.title }}">
+       <span class="post-meta-divider">|</span>
+       <span class="post-meta-item-text"> 点击的次数:  </span>
+       <span class="leancloud-visitors-count"></span>
+    </span>
+  {% endif %}
+
   {% include disqus.html %}
 </article>
+
+
