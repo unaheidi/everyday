@@ -1,10 +1,9 @@
 .DS_Store
+*.swp
 .jekyll
 .jekyll-metadata
 .bundle
-Gemfile
 node_modules
-package.json
 
 # Global
 *.DS_Store
