@@ -17,6 +17,8 @@ avatar: https://raw.githubusercontent.com/unaheidi/unaheidi.github.io/master/ima
 # Leancloud
 leancloud:
   enable: true
+  leancloud_app_id: aINAcA44b2KH19YzDJkA6riy-gzGzoHsz
+  leancloud_app_key: EthTmyRUpzax7J7msOaNioTh
 
 # Includes an icon in the footer for each username you enter
 footer-links:
@@ -83,8 +85,12 @@ plugins:
 
 # Exclude these files from your production _site
 exclude:
+  - .travis.yml
+  - bin/*
+  - circle.yml
   - Gemfile
   - Gemfile.lock
+  - package.json
   - LICENSE
   - README.md
   - CNAME
