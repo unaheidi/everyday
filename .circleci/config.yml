@@ -4,6 +4,9 @@ jobs:
     docker:
       - image: circleci/ruby:2.4.3-node-browsers
     steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "a7:55:ff:c9:08:fa:04:2e:b3:34:0b:55:6a:f7:ec:e1"
       - checkout
       - run: npm install
       - run: bundle install
