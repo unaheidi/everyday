@@ -19,8 +19,7 @@ GitLab 却已逐渐从代码管理中心华丽转变为了 DevOps 全流程的�
 * 在个人电脑上安装好 docker
 * 用 docker 搭建好 GitLab 服务
 * 用 docker 搭建好 GitLab runner
-* 把 GitLab runner 进行 register
-* 解决 register 过程中两个container 网络连接的问题
+* 注册 GitLab runner
 
 ### docker 命令
 
