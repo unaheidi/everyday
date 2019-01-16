@@ -4,7 +4,6 @@ layout: post
 
 ## 把 GitLab 自带的 CI 捡起来
 
-```
 2015年到2018年之间，因为换公司的缘故，我把工作重心从持续集成的开发 -> 为更大规模研发团队提供高可用的代码服务，而恰好就在这三年之间，
 GitLab 却已逐渐从代码管理中心华丽转变为了 DevOps 全流程的服务中心。
 
@@ -15,16 +14,13 @@ GitLab 却已逐渐从代码管理中心华丽转变为了 DevOps 全流程的�
 特别适合开发阶段时不时需要优化 CI 策略的场景。
  
 想起这些好处，忍不住鞭策自己抓紧行动起来，赶快搭建 GitLab 的 runner 吧。
-```
 
 ### 个人搭建步骤
-```
 * 在个人电脑上安装好 docker
 * 用 docker 搭建好 GitLab 服务
 * 用 docker 搭建好 GitLab runner
 * 把 GitLab runner 进行 register
 * 解决 register 过程中两个container 网络连接的问题
-```
 
 ### docker 命令
 
