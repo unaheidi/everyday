@@ -24,6 +24,7 @@ GitLab 却已逐渐从代码管理中心华丽转变为了 DevOps 全流程的�
 ### docker 命令
 
 * 创建 container 运行 GitLab 服务 
+
 ```
 docker run --detach \
 	--hostname localhost \
@@ -37,6 +38,7 @@ docker run --detach \
 ```
 
 * 创建 container 运行 GitLab-runner 服务
+
 ```
 docker run -d --name gitlab-runner --restart always \
   -v /srv/gitlab-runner/config:/etc/gitlab-runner \
@@ -67,6 +69,7 @@ docker run --rm -t -i -v /srv/gitlab-runner/config:/etc/gitlab-runner gitlab/git
 ```
 
 * 进入到 container中 
+
 ```
 docker exec -it <container name> /bin/bash
 ```
