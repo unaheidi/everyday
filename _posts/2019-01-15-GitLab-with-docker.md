@@ -73,7 +73,12 @@ docker run --rm -t -i -v /srv/gitlab-runner/config:/etc/gitlab-runner gitlab/git
 ```
 docker exec -it <container name> /bin/bash
 ```
-  
+
+* 查看 container 的日志
+
+```
+docker logs container_name
+```
 
 
 ### 参考资料
