@@ -17,6 +17,7 @@ GitLab 却已逐渐从代码管理中心华丽转变为了 DevOps 全流程的�
 
 ### 个人搭建步骤
 * 在个人电脑上安装好 docker
+* docker 设置 File Sharing（/srv/gitlab/config ，/srv/gitlab/logs，/srv/gitlab/data）
 * 用 docker 搭建好 GitLab 服务
 * 用 docker 搭建好 GitLab runner
 * 注册 GitLab runner
@@ -27,7 +28,7 @@ GitLab 却已逐渐从代码管理中心华丽转变为了 DevOps 全流程的�
 
 ```
 docker run --detach \
-	--hostname localhost \
+	--hostname 172.17.0.1 \
 	--publish 443:443 --publish 80:80 --publish 22:22 \
 	--name gitlab \
 	--restart always \
@@ -77,8 +78,23 @@ docker exec -it <container name> /bin/bash
 * 查看 container 的日志
 
 ```
-docker logs container_name
+docker logs -f container_name
 ```
+
+### 启动 GitLab container 报错的处理
+
+* 文件共享的问题
+
+```
+$ docker run --detach     --hostname 172.17.0.1     --publish 443:443 --publish 80:80 --publish 22:22     --name gitlab-02     --restart always     --volume /Users/Shared/gitlab/config:/etc/gitlab     --volume /Users/Shared/gitlab/logs:/var/log/gitlab     --volume /Users/Shared/gitlab/data:/var/opt/gitlab     gitlab/gitlab-ce:latest
+984166f405e804998fc93bc2f64e9ebedac313de8f519b26134841d9f0a69530
+docker: Error response from daemon: Mounts denied:
+The paths /Users/Shared/gitlab/logs and /Users/Shared/gitlab/config and /Users/Shared/gitlab/data
+are not shared from OS X and are not known to Docker.
+You can configure shared paths from Docker -> Preferences... -> File Sharing.
+See https://docs.docker.com/docker-for-mac/osxfs/#namespaces for more info.
+```
+* 文件权限问题，详见：https://gitlab.com/gitlab-org/omnibus-gitlab/issues/2976
 
 
 ### 参考资料
