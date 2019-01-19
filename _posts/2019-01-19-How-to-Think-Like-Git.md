@@ -10,7 +10,7 @@ layout: post
 这些个因素，导致课程虽然录制完了，但还是感觉少了些什么，就 “Think Like Git” 相关的内容，课程准备过程中也是在“讲，还是不讲”左右徘徊中。
 个人还是认为很有必要和大家聊一聊“做哪些努力，我才能如 Git 一样思考”诸如此类的话题的。借直播的机会，我们不妨说一说这些个事情。
 
-Google上有类似的文章，我认为《Demystifying Git: 3 Concepts to Do Everything with Git》 写得非常好，我们不妨跟着它的步伐，挑一些关键的那日，
+Google上有类似的文章，我认为《Demystifying Git: 3 Concepts to Do Everything with Git》 写得非常好，我们不妨跟着它的步伐，挑一些关键的内容，
 一起来揭秘 Git 。
 
 ### 三个必要的概念
