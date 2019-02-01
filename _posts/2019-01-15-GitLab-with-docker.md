@@ -86,10 +86,8 @@ docker logs -f container_name
 * 文件共享的问题
 
 ```
-$ docker run --detach     --hostname 172.17.0.1     --publish 443:443 --publish 80:80 --publish 22:22     --name gitlab-02     --restart always     --volume /Users/Shared/gitlab/config:/etc/gitlab     --volume /Users/Shared/gitlab/logs:/var/log/gitlab     --volume /Users/Shared/gitlab/data:/var/opt/gitlab     gitlab/gitlab-ce:latest
-984166f405e804998fc93bc2f64e9ebedac313de8f519b26134841d9f0a69530
 docker: Error response from daemon: Mounts denied:
-The paths /Users/Shared/gitlab/logs and /Users/Shared/gitlab/config and /Users/Shared/gitlab/data
+The paths  and  and 
 are not shared from OS X and are not known to Docker.
 You can configure shared paths from Docker -> Preferences... -> File Sharing.
 See https://docs.docker.com/docker-for-mac/osxfs/#namespaces for more info.
