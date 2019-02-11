@@ -65,7 +65,7 @@ docker run --rm -t -i -v /srv/gitlab-runner/config:/etc/gitlab-runner gitlab/git
   Please enter the executor: docker, parallels, shell, docker-ssh+machine, kubernetes, docker-ssh, ssh, virtualbox, docker+machine:
   docker
   Please enter the default Docker image (e.g. ruby:2.1):
-  gitlab
+  ruby:2.1
   Runner registered successfully. Feel free to start it, but if it's running already the config should be automatically reloaded!
 ```
 
