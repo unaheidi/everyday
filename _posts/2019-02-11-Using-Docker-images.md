@@ -14,8 +14,10 @@ Docker是个开源的项目，推出的服务允许我们选择基于某个image
 
 ### CI采用docker的前提
 
-GitLab Runner自身的服务，我们可以采用docker安装或非docker安装的方式。
-而CI如果想采用dokcer来构建项目的话，必须先注册docker的runner（Register Docker Runner）。
+GitLab-Runner自身的服务，我们可以采用docker安装或非docker安装的方式。
+我们本节所指采用docker，是说runner调用的CI环境采用的是docker容器的方式，而并不是说GitLab-Runner是否采用docker。
+
+CI如果想采用docker来构建项目的话，必须先注册docker的runner（Register Docker Runner）。
 实际上，这个注册的过程不外乎就是指定了Image和Service这些运行docker容器必须的信息罢了。
 比如：
 ```
@@ -30,6 +32,10 @@ sudo gitlab-runner register \
 
 ```
 被注册的runner会使用ruby:2.1的image，还会运行基于postgres:latest和mysql:latest这两个services。在构建中会使用到这两个services。
+如果GitLab-Runner本身使用docker安装的，则register的命令通常如下：
+```
+docker run --rm -t -i -v /srv/gitlab-runner/config:/etc/gitlab-runner gitlab/gitlab-runner register
+```
 
 ### image需要注意的点
 
