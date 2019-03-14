@@ -18,6 +18,7 @@ layout: post
 ```
  grep -rnw '/path/to/somewhere/' -e 'pattern'
  grep --exclude=*.log*  -rnw '.' -e '10.18.5.110'
+ grep --exclude-dir=node_modules  -rnw '.' -e 'database'
  
 ```
 
