@@ -26,7 +26,7 @@ GitLab 却已逐渐从代码管理中心华丽转变为了 DevOps 全流程的�
 
 * 创建 container 运行 GitLab 服务 
 
-```
+
 docker run --detach \
 	--hostname 172.17.0.1 \
 	--publish 443:443 --publish 80:80 --publish 22:22 \
@@ -36,21 +36,21 @@ docker run --detach \
 	--volume /srv/gitlab/logs:/var/log/gitlab \
 	--volume /srv/gitlab/data:/var/opt/gitlab \
 	gitlab/gitlab-ce:latest
-```
+
 
 * 创建 container 运行 GitLab-runner 服务
 
-```
+
 docker run -d --name gitlab-runner --restart always \
   -v /srv/gitlab-runner/config:/etc/gitlab-runner \
   -v /var/run/docker.sock:/var/run/docker.sock \
   gitlab/gitlab-runner:latest
 
-```
+
 
 * 为某个 GitLab project 注册 runner
 
-```
+
 docker run --rm -t -i -v /srv/gitlab-runner/config:/etc/gitlab-runner gitlab/gitlab-runner register
 
   Please enter the gitlab-ci coordinator URL (e.g. https://gitlab.com/):
@@ -67,31 +67,31 @@ docker run --rm -t -i -v /srv/gitlab-runner/config:/etc/gitlab-runner gitlab/git
   Please enter the default Docker image (e.g. ruby:2.1):
   ruby:2.1
   Runner registered successfully. Feel free to start it, but if it's running already the config should be automatically reloaded!
-```
+
 
 * 进入到 container中 
 
-```
+
 docker exec -it <container name> /bin/bash
-```
+
 
 * 查看 container 的日志
 
-```
+
 docker logs -f container_name
-```
+
 
 ### 启动 GitLab container 报错的处理
 
 * 文件共享的问题
 
-```
+
 docker: Error response from daemon: Mounts denied:
 The paths  and  and 
 are not shared from OS X and are not known to Docker.
 You can configure shared paths from Docker -> Preferences... -> File Sharing.
 See https://docs.docker.com/docker-for-mac/osxfs/#namespaces for more info.
-```
+
 * 文件权限问题，详见：https://gitlab.com/gitlab-org/omnibus-gitlab/issues/2976
 
 
