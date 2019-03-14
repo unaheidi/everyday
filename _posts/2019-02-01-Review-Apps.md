@@ -18,3 +18,8 @@ GitLab提供了把项目部署到 openshift 的例子。在 .gitlab-ci.yml 配�
 * OPENSHIFT_TOKEN
 * OPENSHIFT_DOMAIN
 
+## 目前进展
+
+Review Apps 这块也需要创建动态的测试环境，目前团队还没精力提供该环境。
+
+
