@@ -10,6 +10,13 @@ layout: post
 
 ```
  find ./ !  -name '*log' !  -path 'log'   -mtime 0;
+ 
+```
 
+### 哪些文件包含特定的文字？
+
+```
+ grep -rnw '/path/to/somewhere/' -e 'pattern'
+ 
 ```
 
