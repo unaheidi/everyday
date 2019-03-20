@@ -1,9 +1,9 @@
 # Site settings
 title: Breezedeus
-SEOTitle: Breezedeus | breeze | deus
+SEOTitle: Breezedeus | 算法优化世界
 header-img: img/home-bg.png
 email: breezedeus@163.com
-description: "算法攻城 | 数学"
+description: "算法优化世界 | 数学"
 keyword: "breezedeus, 机器学习, 推荐系统, NLP, 对话机器人, 爱因互动, 一个AI"
 url: "http://breezedeus.github.io" # the base hostname & protocol for your site
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
