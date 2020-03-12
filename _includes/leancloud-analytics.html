@@ -2,7 +2,7 @@
 
 <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
 <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
-<script>AV.initialize("{{ site.env.leancloud_app_id }}", "{{ site.env.leancloud_app_key }}");</script>
+<script>AV.initialize("{{ site.leancloud.app_id }}", "{{ site.leancloud.app_key }}");</script>
 <script>
     function showHitCount(Counter) {
         var query = new AV.Query(Counter);
