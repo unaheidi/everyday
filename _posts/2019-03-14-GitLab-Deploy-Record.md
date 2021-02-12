@@ -1,5 +1,6 @@
 ---
 layout: post
+published: true
 ---
 
 ## GitLab部署过程的 N 个坑
@@ -15,27 +16,11 @@ Blog的用处：大家懂的，技术牛的人一般来说都懒得写文档，�
             
 ### 资料
 
-While doing source installation I see `JavaScript heap out of memory`
-https://gitlab.com/gitlab-org/gitlab-ce/issues/50937
-
-A Brief History of GitLab Workhorse
-https://about.gitlab.com/2016/04/12/a-brief-history-of-gitlab-workhorse/
-
-mysql install
-https://docs.gitlab.com/ee/install/database_mysql.html
-
-Mysql2::Error: Specified key was too long; max key length is 767 bytes: A
-https://gitlab.com/gitlab-org/gitlab-ce/issues/41483
-
-Gitaly
-https://docs.gitlab.com/ce/administration/gitaly/
-
-gitlab-ce reset root password
-https://gitlab.com/gitlab-org/omnibus-gitlab/issues/2934
-
-gitlab Import url is blocked: "Requests to the local network are not allowed"
-https://gitlab.com/gitlab-org/gitlab-ce/issues/57948
-
-CentOS 7安装Ruby on Rails
-https://www.jianshu.com/p/e4847f3926d1
-
+[While doing source installation I see 'JavaScript heap out of memory'](https://gitlab.com/gitlab-org/gitlab-ce/issues/50937)  
+[A Brief History of GitLab Workhorse](https://about.gitlab.com/2016/04/12/a-brief-history-of-gitlab-workhorse/)  
+[mysql install](https://docs.gitlab.com/ee/install/database_mysql.html)  
+[Mysql2::Error: Specified key was too long; max key length is 767 bytes: ](https://gitlab.com/gitlab-org/gitlab-ce/issues/41483)
+[Gitaly](https://docs.gitlab.com/ce/administration/gitaly/)  
+[gitlab-ce reset root password](https://gitlab.com/gitlab-org/omnibus-gitlab/issues/2934)  
+[gitlab Import url is blocked: "Requests to the local network are not allowed"](https://gitlab.com/gitlab-org/gitlab-ce/issues/57948)  
+[CentOS 7安装Ruby on Rails](https://www.jianshu.com/p/e4847f3926d1)
