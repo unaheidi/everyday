@@ -18,5 +18,5 @@ published: true
 
 ## 额外收获
 在找解决方法的过程中，翻看了 https://github.com/barryclark/jekyll-now README，
-发现 Prose 这个在线编辑服务很不错，有了它，写 blog 会高效不少。
-![prose1.jpg]({{site.baseurl}}/_posts/prose1.jpg)
+发现 Prose 这个在线编辑服务很不错，有了它，写 blog 会高效不少。  
+![prose.jpg]({{site.baseurl}}/_posts/images/prose.jpg)
