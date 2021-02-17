@@ -12,7 +12,7 @@ published: true
 * markdown 的 code 片段，原本只需一层背景说明它是代码，目前外部又多了一个背景，看起来特别丑。
 
 ## 解决方法
-* 图片问题通过修改 ／etc/hosts 文件搞定了，查资料是域名被劫持引起的。 [参考](https://www.jianshu.com/p/65e99b0f82ac)
+* 图片问题通过修改 /etc/hosts 文件搞定了，查资料是域名被劫持引起的。 [参考](https://www.jianshu.com/p/65e99b0f82ac)
 * 阅读数通过激活 leancloud 的应用搞定。
 * code展示冗余背景的问题，通过修改 _sass/_highlights.scss 文件搞定。[参考](https://github.com/barryclark/jekyll-now/issues/1025)
 
